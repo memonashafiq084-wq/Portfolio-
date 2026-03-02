@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -49,6 +50,8 @@ text-decoration:none;
 border-radius:6px;
 margin-top:20px;
 transition:0.3s;
+border:none;
+cursor:pointer;
 }
 
 .btn:hover{
@@ -119,17 +122,11 @@ padding:30px 10%;
 margin-top:50px;
 }
 
-.social-links a{
-color:#14b8a6;
-margin:0 10px;
-text-decoration:none;
-}
-
-.whatsapp{
+.whatsapp-float{
 position:fixed;
 bottom:20px;
 right:20px;
-background:#14b8a6;
+background:#25D366;
 color:#fff;
 padding:15px 18px;
 border-radius:50%;
@@ -139,9 +136,32 @@ box-shadow:0 0 15px rgba(0,0,0,0.4);
 transition:0.3s;
 }
 
-.whatsapp:hover{
-background:#0d9488;
+.whatsapp-float:hover{
 transform:scale(1.1);
+}
+
+.social-buttons{
+text-align:center;
+margin-top:30px;
+}
+
+.social-buttons a{
+display:inline-block;
+margin:8px;
+padding:12px 25px;
+border-radius:6px;
+color:#fff;
+text-decoration:none;
+transition:0.3s;
+}
+
+.whatsapp-btn{background:#25D366;}
+.facebook-btn{background:#1877F2;}
+.linkedin-btn{background:#0A66C2;}
+
+.social-buttons a:hover{
+opacity:0.85;
+transform:translateY(-3px);
 }
 
 @media(max-width:768px){
@@ -216,6 +236,7 @@ I provide high-quality blog writing, authority backlinks, guest posting, and man
 <!-- CONTACT -->
 <section class="contact" id="contact">
 <h2>Contact Me</h2>
+
 <form action="mailto:yourname@email.com" method="post" enctype="text/plain">
 <input type="text" name="Name" placeholder="Your Name" required>
 <input type="email" name="Email" placeholder="Your Email" required>
@@ -223,21 +244,23 @@ I provide high-quality blog writing, authority backlinks, guest posting, and man
 <button type="submit" class="btn">Send Message</button>
 </form>
 
-<div class="social-links" style="margin-top:30px; text-align:center;">
-<a href="#">Fiverr</a>
-<a href="#">Upwork</a>
-<a href="#">LinkedIn</a>
+<div class="social-buttons">
+
+<a href="#" class="whatsapp-btn">💬 WhatsApp</a>
+
+<a href="#" class="facebook-btn">📘 Facebook</a>
+
+<a href="#" class="linkedin-btn">💼 LinkedIn</a>
+
 </div>
 
 </section>
 
-<!-- FOOTER -->
 <footer>
 <p>© 2026 Memoona | SEO Content Writer & Outreach Specialist</p>
 </footer>
 
-<!-- WHATSAPP BUTTON -->
-<a href="https://wa.me/92XXXXXXXXXX" class="whatsapp">💬</a>
+<a href="https://wa.me/92XXXXXXXXXX" class="whatsapp-float">💬</a>
 
 </body>
-  </html>
+</html>
