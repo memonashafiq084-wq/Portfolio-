@@ -60,7 +60,7 @@ background:#0d9488;
 transform:translateY(-3px);
 }
 
-/* HERO SECTION */
+/* HERO */
 
 .hero{
 display:flex;
@@ -93,7 +93,7 @@ border:6px solid #14b8a6;
 box-shadow:0 0 40px rgba(20,184,166,0.4);
 }
 
-/* SERVICES */
+/* GRID */
 
 .grid{
 display:grid;
@@ -112,6 +112,12 @@ transition:0.3s;
 .card:hover{
 transform:translateY(-10px);
 box-shadow:0 0 20px rgba(20,184,166,0.2);
+}
+
+/* TESTIMONIALS */
+
+.testimonials .card{
+font-style:italic;
 }
 
 /* CONTACT */
@@ -212,7 +218,7 @@ margin-top:30px;
 
 <body>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <section class="hero">
 
@@ -266,6 +272,32 @@ I’m Memoona — a professional SEO Content Writer and Outreach Specialist prov
 </div>
 </section>
 
+<!-- TESTIMONIALS -->
+
+<section class="testimonials">
+<h2>Client Reviews</h2>
+
+<div class="grid">
+
+<div class="card">
+“Professional service and real websites. My rankings improved within months.”
+<br><br><strong>— SEO Agency Owner</strong>
+</div>
+
+<div class="card">
+“Her guest posting service helped our e-commerce store gain authority and traffic.”
+<br><br><strong>— E-commerce Brand</strong>
+</div>
+
+<div class="card">
+“Transparent outreach process and timely delivery. Highly recommended!”
+<br><br><strong>— Blogger</strong>
+</div>
+
+</div>
+
+</section>
+
 <!-- CONTACT -->
 
 <section class="contact" id="contact">
@@ -279,11 +311,9 @@ I’m Memoona — a professional SEO Content Writer and Outreach Specialist prov
 </form>
 
 <div class="social-buttons">
-
 <a href="#" class="whatsapp-btn">💬 WhatsApp</a>
 <a href="#" class="facebook-btn">📘 Facebook</a>
 <a href="#" class="linkedin-btn">💼 LinkedIn</a>
-
 </div>
 
 </section>
