@@ -1,11 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Memoona | SEO Content Writer & Outreach Specialist</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
 
 *{
@@ -26,7 +27,7 @@ padding:80px 10%;
 }
 
 h1{
-font-size:48px;
+font-size:45px;
 margin-bottom:20px;
 }
 
@@ -43,7 +44,7 @@ line-height:1.7;
 
 .btn{
 display:inline-block;
-padding:12px 30px;
+padding:12px 28px;
 background:#14b8a6;
 color:#fff;
 text-decoration:none;
@@ -59,17 +60,40 @@ background:#0d9488;
 transform:translateY(-3px);
 }
 
+/* HERO SECTION */
+
 .hero{
 display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:flex-start;
+align-items:center;
+justify-content:space-between;
 min-height:90vh;
+gap:40px;
 }
 
-.hero span{
+.hero-text{
+flex:1;
+}
+
+.hero-text span{
 color:#14b8a6;
 }
+
+.hero-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:300px;
+height:300px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid #14b8a6;
+box-shadow:0 0 40px rgba(20,184,166,0.4);
+}
+
+/* SERVICES */
 
 .grid{
 display:grid;
@@ -90,9 +114,7 @@ transform:translateY(-10px);
 box-shadow:0 0 20px rgba(20,184,166,0.2);
 }
 
-.testimonials .card{
-font-style:italic;
-}
+/* CONTACT */
 
 .contact form{
 display:flex;
@@ -115,30 +137,7 @@ input:focus, textarea:focus{
 outline:1px solid #14b8a6;
 }
 
-footer{
-background:#111;
-text-align:center;
-padding:30px 10%;
-margin-top:50px;
-}
-
-.whatsapp-float{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:#fff;
-padding:15px 18px;
-border-radius:50%;
-text-decoration:none;
-font-size:20px;
-box-shadow:0 0 15px rgba(0,0,0,0.4);
-transition:0.3s;
-}
-
-.whatsapp-float:hover{
-transform:scale(1.1);
-}
+/* SOCIAL BUTTONS */
 
 .social-buttons{
 text-align:center;
@@ -164,9 +163,47 @@ opacity:0.85;
 transform:translateY(-3px);
 }
 
-@media(max-width:768px){
-h1{
-font-size:34px;
+/* FOOTER */
+
+footer{
+background:#111;
+text-align:center;
+padding:30px 10%;
+margin-top:50px;
+}
+
+/* FLOATING WHATSAPP */
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:15px 18px;
+border-radius:50%;
+text-decoration:none;
+font-size:20px;
+box-shadow:0 0 15px rgba(0,0,0,0.4);
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-image img{
+width:220px;
+height:220px;
+margin-top:30px;
 }
 }
 
@@ -175,65 +212,62 @@ font-size:34px;
 
 <body>
 
-<!-- HERO -->
+<!-- HERO SECTION -->
+
 <section class="hero">
+
+<div class="hero-text">
 <h1>Grow Your Website With <span>Powerful Backlinks</span></h1>
 <p>I help brands increase traffic, rankings, and authority through SEO content writing, guest posting & manual outreach campaigns.</p>
 <a href="#contact" class="btn">Work With Me</a>
+</div>
+
+<div class="hero-image">
+<img src="profile.jpg" alt="Memoona">
+</div>
+
 </section>
 
 <!-- ABOUT -->
+
 <section>
 <h2>About Me</h2>
 <p style="text-align:center; max-width:700px; margin:auto;">
-I’m Memoona — a professional SEO Content Writer and Outreach Specialist. 
-I provide high-quality blog writing, authority backlinks, guest posting, and manual outreach services for agencies, bloggers, and businesses worldwide.
+I’m Memoona — a professional SEO Content Writer and Outreach Specialist providing high-quality blog writing, authority backlinks, guest posting, and manual outreach services worldwide.
 </p>
 </section>
 
 <!-- SERVICES -->
+
 <section>
 <h2>My Services</h2>
 <div class="grid">
+
 <div class="card">
 <h3>SEO Blog Writing</h3>
-<p>Keyword optimized, engaging content that ranks and drives organic traffic.</p>
+<p>Keyword optimized content designed to rank and attract organic traffic.</p>
 </div>
+
 <div class="card">
 <h3>Guest Posting</h3>
-<p>Publish on real, niche relevant websites with DoFollow backlinks.</p>
+<p>Real niche relevant websites with DoFollow backlinks.</p>
 </div>
+
 <div class="card">
 <h3>Manual Outreach</h3>
-<p>Personalized outreach to secure high authority backlinks.</p>
+<p>Personalized outreach campaigns for high authority backlinks.</p>
 </div>
+
 <div class="card">
 <h3>Backlink Packages</h3>
-<p>High DA backlinks with full reporting and transparent process.</p>
+<p>High DA backlinks with full transparent reporting.</p>
 </div>
-</div>
-</section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials">
-<h2>Client Feedback</h2>
-<div class="grid">
-<div class="card">
-“Professional service and real websites. Highly recommended.”
-<br><br><strong>— SEO Agency Owner</strong>
-</div>
-<div class="card">
-“My rankings improved significantly after her guest posts.”
-<br><br><strong>— E-commerce Brand</strong>
-</div>
-<div class="card">
-“Transparent communication and fast delivery.”
-<br><br><strong>— Blogger</strong>
-</div>
 </div>
 </section>
 
 <!-- CONTACT -->
+
 <section class="contact" id="contact">
 <h2>Contact Me</h2>
 
@@ -247,9 +281,7 @@ I provide high-quality blog writing, authority backlinks, guest posting, and man
 <div class="social-buttons">
 
 <a href="#" class="whatsapp-btn">💬 WhatsApp</a>
-
 <a href="#" class="facebook-btn">📘 Facebook</a>
-
 <a href="#" class="linkedin-btn">💼 LinkedIn</a>
 
 </div>
